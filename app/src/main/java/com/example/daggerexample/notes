@@ -1,0 +1,15 @@
+Better to use Contruction injection whenever it is possible
+Field injection is meant to be used with frameworks
+Method injection is very rarely used
+Constructor -> Injected fields -> Injected methods
+
+If we cannot write @Inject (class belongs to library) we can use modules
+Modules are classes that contribute to the object graph
+@Module to create module class
+@Provides to tell dagger how to provide specific objects and dependencies
+Whenever provide methods doesn't depend on other then make methods static
+
+@Binds whenever I want just to bind an implementation to an interface.
+Gives better performance then @Provides
+
+To runtime
